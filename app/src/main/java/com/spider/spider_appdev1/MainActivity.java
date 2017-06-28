@@ -106,7 +106,6 @@ public class MainActivity extends AppCompatActivity {
 
                                       //Toast.makeText(MainActivity.this,l,Toast.LENGTH_LONG).show();
 
-
                                       // items.remove(l);
                                       adapter.notifyDataSetChanged();
                                       //itemsnew.addAll(items);
@@ -116,7 +115,6 @@ public class MainActivity extends AppCompatActivity {
                                         //items.remove(ed2.getText().toString());
 
                                       //adapter.clear();
-
 
 
                                       Thread t = new Thread() {
