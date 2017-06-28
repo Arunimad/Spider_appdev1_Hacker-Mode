@@ -33,6 +33,7 @@ public class MainActivity extends AppCompatActivity {
 
    ArrayList<String> items = new ArrayList<>();
     ArrayList<String> itemsnew = new ArrayList<>();
+    int count =0;
 
 
     @Override
@@ -65,6 +66,7 @@ public class MainActivity extends AppCompatActivity {
 
                 items.add(ed.getText().toString());
                 list.setAdapter(adapter);
+                count++;
                 //items[0] ="me";
                 //adapter.add(items);
                 //adapter.notifyDataSetChanged();
@@ -92,9 +94,14 @@ public class MainActivity extends AppCompatActivity {
 
                                       int l =Integer.valueOf(ed2.getText().toString()).shortValue();
 
+                                      if(l<=count && l >0) {
 
 
-                                      items.remove(l);
+                                          items.remove(l-1);
+                                          count--;
+                                      }
+                                      else
+                                          Toast.makeText(MainActivity.this, "Postion - Invalid", Toast.LENGTH_SHORT).show();
 
 
                                       //Toast.makeText(MainActivity.this,l,Toast.LENGTH_LONG).show();

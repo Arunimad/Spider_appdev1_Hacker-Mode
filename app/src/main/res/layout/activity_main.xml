@@ -65,7 +65,7 @@
 
     <Button
         android:id="@+id/button2"
-        android:text="Remove Item"
+        android:text="Remove Item (Enter Valid Postion = ( 1 to max ))"
         android:layout_width="150sp"
         android:layout_height="wrap_content"
         android:layout_alignParentRight="true"
